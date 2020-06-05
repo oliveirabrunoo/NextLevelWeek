@@ -13,7 +13,7 @@ import logo from '../../assets/logo.svg';
 
 // sempre que tiver um estado para uma array ou objeto, é necessário informar o ipo da váriavel armazenada dentro 
 
-interface item {
+interface Item {
     id: number;
     title: string;
     image_url: string;
@@ -28,7 +28,7 @@ interface IBGECityResponse {
 }
 
 const CreatePoint = () => {
-    const [items, setItems] = useState<item[]>([]);
+    const [items, setItems] = useState<Item[]>([]);
     const [ufs, setUfs] = useState<string[]>([]);
     const [cities, setCities] = useState<string[]>([]);
 
@@ -123,7 +123,7 @@ const CreatePoint = () => {
         const uf = selectedUF;
         const city = selectedCity;
         const [latitude, longitude] = selectedPosition;
-        const items = setSelectedItems;
+        const items = selectedItems;
 
         const data = {
             name,
