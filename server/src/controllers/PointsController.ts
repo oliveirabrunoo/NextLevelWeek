@@ -50,6 +50,7 @@ class PointsController {
     }
 
     async create(request: Request, response: Response) {
+        
         const {
             name,
             email,
@@ -73,7 +74,7 @@ class PointsController {
             longitude,
             city,
             uf
-        }
+        };
 
         // console.log(point);
         // return;

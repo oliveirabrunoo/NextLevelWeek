@@ -143,7 +143,8 @@ const CreatePoint = () => {
         }
 
         await api.post('points', data);
-        console.log("feitoooo");
+        console.log(data);
+        alert('Ponto Cadastrado com Sucesso');
     }
 
     return (
